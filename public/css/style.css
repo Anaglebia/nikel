@@ -1,6 +1,14 @@
+.color-primary{
+    color: #4e0070;
+}
+
+.color-secondary{
+    color: #4c79d3;
+}
 .login{
     background: linear-gradient(120deg, #4c79d3 44.9%, #fff  45%) no-repeat fixed;
 }
+
 .login{
     background-color: #4c79d3;
 }
@@ -8,6 +16,22 @@
 color: #fff;
 font-size: 18px;
 font-weight: 500;
+}
+
+.icon-datail{
+    font-size: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.app{
+    background: linear-gradient(120deg,#fff  45%, #4c79d3 44.9%) no-repeat fixed; 
+}
+header{
+    border-bottom: 1px solid #becbcb;
+    padding: 5px;
+    background-color: #fff
+    ;
 }
 
 .coins{
@@ -22,7 +46,7 @@ font-weight: 500;
     margin: 0 25%;
 }
 
-.btn-login:hover{
+.btn-login:hover, .button-default:hover{
     background: #4c79d3;
     color: #fff;
 }
@@ -33,5 +57,18 @@ font-weight: 500;
 }
 .link-default:hover{
     color: #4c79d3;
+}
+.info{
+    background-color: #fff;
+    border-radius: 20px 20px 0 0 ;
+    padding: 20px 0 0;
+}
+
+.button-default{
+    background-color: #4e0070;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
