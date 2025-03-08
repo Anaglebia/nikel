@@ -52,8 +52,13 @@ header{
 }
 
 .link-default{
+    border-radius: 10px;
     color: #4e0070;
     cursor: pointer;
+}
+
+.link-cancel{
+    border-radius: 10px;
 }
 .link-default:hover{
     color: #4c79d3;
@@ -63,6 +68,26 @@ header{
     border-radius: 20px 20px 0 0 ;
     padding: 20px 0 0;
 }
+
+.button-float{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rm;
+    font-size: 35px;
+    background-color: #4e0070;
+    border: 2px solid #4e0070;
+    color: #fff;
+    padding: 0 !important;
+}
+.button-float:hover{
+    background-color: #4c79d3;
+    border: 2px solid #4c79d3;
+    color: #4c79d3;
+}
+
 
 .button-default{
     background-color: #4e0070;

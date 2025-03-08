@@ -52,13 +52,13 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
                         </div>
-                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <button type="button" class="btn btn-login">Entrar</button>
                       </form>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                    <p class="text-center mt-2 form-text"> Ainda não tem conta? <span class="link-default">Criar uma conta</span><a href="./register.html"></a></p>
+                    <p class="text-center mt-2 form-text"  data-bs-toggle="modal" data-bs-target="#register-Modal"> Ainda não tem conta? <span class="link-default">Criar uma conta</span>></p>
                 </div>
               </div>
               <div class="row">
@@ -89,5 +89,42 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="register-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua conta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="form-create"> 
+      <div class="modal-body">
+          <div class="mb-3">
+            <label for="email-create-input" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email-create-input" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Utilize seu email pra crar a conta.</div>
+          </div>
+          <div class="mb-3">
+            <label for="senha-create-input" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha-create-input">
+            <div id="emailHelp" class="form-text">Crie uma senha de 6 a 10 digitos.</div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary link-cancel" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn button-default">Salvar</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
   </body>
 </html>
