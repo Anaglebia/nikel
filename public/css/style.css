@@ -97,3 +97,7 @@ header{
     cursor: pointer;
 }
 
+.logout{
+    min-width: 5rem;
+}
+

@@ -1,6 +1,6 @@
 const myModal = new bootstrap.Modal("#register-Modal");
 let logged = sessionStorage.getItem('logged');
-const sessiom = localStorage.getItem('session');
+const session = localStorage.getItem('session');
 checkLogged();
 
 // Logar no sistema
@@ -36,10 +36,10 @@ document.getElementById('form-create').addEventListener('submit', function(e) {
     const password = document.getElementById('senha-create-input').value;
 
     if(email.length < 5) {
-        alert('Password must be at least 6 characters');
+        alert('Preencha o compo com um e-amil valido');
         return;
     }if(password.length < 4) {
-        alert('Email must be at least 6 characters');
+        alert('A senha deve ter no minimo 6 caracteres');
         return;
     }
 
@@ -50,7 +50,7 @@ document.getElementById('form-create').addEventListener('submit', function(e) {
     });
 
     myModal.hide();
-    alert("conta criada com sucesso");
+    alert("Conta criada com sucesso");
 });
 
 
@@ -62,14 +62,15 @@ function saveAcount(data){
 
 // checa se ta logado
 function checkLogged(){
-    if(sessiom){
-        sessionStorage.setItem('logged', sessiom);
-        logged = sessiom;
+    if(session){
+        sessionStorage.setItem('logged', session);
+        logged = session;
     }
     if(logged){
-        saveSession(logged, sessiom);
+        saveSession(logged, session);
 
         window.location.href = 'home.html';
+}
 }
 
 // salva a sessao
